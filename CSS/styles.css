@@ -122,6 +122,149 @@ ul li ul li a {
 
 /* Main */
 
+.forside_h2 {
+  margin-top: 4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.forside_h2 h2 {
+  font-size: 1.5rem;
+}
+
+.forside_h3 {
+  line-height: 0.5rem;
+}
+
+.rows_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid red;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  gap: 2rem;
+}
+
+.row_1 {
+  grid-row: 1;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row_1_1 {
+  grid-column: 1;
+  text-align: center;
+  font-size: 1.5cqi;
+  margin-top: 2rem;
+}
+
+.row_1_2 {
+  grid-column: 2;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.row_1_3 {
+  grid-column: 3;
+  text-align: center;
+}
+
+.row_2 {
+  grid-row: 2;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row_2_1 {
+  grid-column: 1;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.row_2_2 {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.5cqi;
+  margin-top: 2rem;
+}
+
+.row_2_3 {
+  grid-column: 3;
+  text-align: center;
+}
+
+.row_3 {
+  grid-row: 3;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row_3_1 {
+  grid-column: 1;
+  border: 1px solid red;
+  font-size: 1.5cqi;
+  text-align: center;
+}
+
+.row_3_2 {
+  grid-column: 2;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.row_3_3 {
+  grid-column: 3;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.row_4 {
+  grid-row: 4;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row_4_1 {
+  grid-column: 1;
+  border: 1px solid red;
+}
+
+.row_4_2 {
+  grid-column: 2;
+  border: 1px solid red;
+}
+
+.row_4_3 {
+  grid-column: 3;
+  border: 1px solid red;
+}
+
+.row_5 {
+  grid-row: 5;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row_5_1 {
+  grid-column: 1;
+  border: 1px solid red;
+}
+
+.row_5_2 {
+  grid-column: 2;
+  border: 1px solid red;
+}
+
+.row_5_3 {
+  grid-column: 3;
+  border: 1px solid red;
+}
+
 .grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -202,8 +345,9 @@ hr {
 }
 
 .button {
-  border-radius: 20px;
+  border-radius: 100px;
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
 }
 
 .button:hover {
@@ -213,6 +357,10 @@ hr {
 
 .flags_svg {
   margin-top: 1rem;
+}
+
+.flags_svg_forside {
+  scale: 0.8;
 }
 
 .oelbaren_logo {
@@ -234,6 +382,18 @@ hr {
   height: auto;
   width: 75%;
   border: 0.5rem solid white;
+}
+
+/* Trees */
+
+#tree1 {
+  width: 15vw;
+  height: auto;
+}
+
+#tree2 {
+  width: 20vw;
+  height: auto;
 }
 
 /* Footer */
@@ -264,6 +424,12 @@ hr {
 .footer_li a {
   color: white;
   font-size: 1rem;
+}
+
+.footer_li_title {
+  color: white;
+  list-style-type: none;
+  margin-bottom: 1rem;
 }
 
 .footer_li a:hover {
