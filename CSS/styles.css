@@ -139,15 +139,15 @@ ul li ul li a {
 .rows_container {
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid red;
+  margin-top: 25rem;
   margin-left: 10rem;
   margin-right: 10rem;
-  gap: 2rem;
+  margin-bottom: 15rem;
+  row-gap: 20rem;
 }
 
 .row_1 {
   grid-row: 1;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -172,7 +172,6 @@ ul li ul li a {
 
 .row_2 {
   grid-row: 2;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -197,72 +196,73 @@ ul li ul li a {
 
 .row_3 {
   grid-row: 3;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .row_3_1 {
   grid-column: 1;
-  border: 1px solid red;
   font-size: 1.5cqi;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .row_3_2 {
   grid-column: 2;
-  border: 1px solid red;
   text-align: center;
 }
 
 .row_3_3 {
   grid-column: 3;
-  border: 1px solid red;
   text-align: center;
 }
 
 .row_4 {
   grid-row: 4;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .row_4_1 {
   grid-column: 1;
-  border: 1px solid red;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .row_4_2 {
   grid-column: 2;
-  border: 1px solid red;
+
+  text-align: center;
+  font-size: 1.5cqi;
 }
 
 .row_4_3 {
   grid-column: 3;
-  border: 1px solid red;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .row_5 {
   grid-row: 5;
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .row_5_1 {
   grid-column: 1;
-  border: 1px solid red;
+  font-size: 1.5cqi;
+  text-align: center;
 }
 
 .row_5_2 {
   grid-column: 2;
-  border: 1px solid red;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .row_5_3 {
   grid-column: 3;
-  border: 1px solid red;
+  text-align: center;
 }
 
 .grid_1_1 {
@@ -369,6 +369,11 @@ hr {
   height: auto;
 }
 
+.oelbaren_logo_forside {
+  width: 100%;
+  height: auto;
+}
+
 .oelbaren_link {
   color: rgb(208, 0, 0);
 }
@@ -384,6 +389,24 @@ hr {
   border: 0.5rem solid white;
 }
 
+.house_painting_logo {
+  width: 25vw;
+  height: auto;
+}
+
+/* Scroll Animationer */
+
+.row {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.row.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Trees */
 
 #tree1 {
@@ -393,6 +416,21 @@ hr {
 
 #tree2 {
   width: 20vw;
+  height: auto;
+}
+
+#tree3 {
+  width: 20vw;
+  height: auto;
+}
+
+#tree4 {
+  width: 18vw;
+  height: auto;
+}
+
+#tree5 {
+  width: 18vw;
   height: auto;
 }
 
