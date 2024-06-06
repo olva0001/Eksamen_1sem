@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(to bottom, #ffffff, #30b145);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+
+    padding: 2em 0 0 0;
+    text-align: center;
+    font-size: 1cqi;
+
+    ul li {
+      margin: 0 auto;
+      display: inline-block;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    li a {
+      color: black;
+    }
+
+    li a:hover {
+      color: #3a3a3a;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: rgb(255, 255, 255);
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+      border-left: 1px solid black;
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #000000;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
