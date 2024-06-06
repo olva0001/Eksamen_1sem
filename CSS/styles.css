@@ -22,8 +22,8 @@ body {
 
 .header_h2 {
   font-weight: 300;
-  font-size: 4cqi;
-  margin: 0;
+  font-size: 5cqi;
+  margin-top: 0;
 }
 
 h2,
@@ -122,6 +122,10 @@ ul li ul li a {
 
 /* Main */
 
+main {
+  overflow-x: hidden;
+}
+
 .forside_h2 {
   margin-top: 4rem;
   margin-left: 10rem;
@@ -168,6 +172,7 @@ ul li ul li a {
 .row_1_3 {
   grid-column: 3;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .row_2 {
@@ -400,6 +405,14 @@ hr {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.row:nth-child(even) {
+  transform: translateX(-1000px);
+}
+
+.row:nth-child(odd) {
+  transform: translateX(1000px);
 }
 
 .row.in-view {
