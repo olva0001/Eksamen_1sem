@@ -10,6 +10,22 @@ body {
   font-style: normal;
 }
 
+.header_title {
+  padding-left: 2rem;
+}
+
+.header_h1 {
+  font-weight: 300;
+  font-size: 5cqi;
+  margin: 0;
+}
+
+.header_h2 {
+  font-weight: 300;
+  font-size: 4cqi;
+  margin: 0;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -20,9 +36,9 @@ nav {
     margin: 0 auto;
     display: block;
 
-    padding: 2em 0 0 0;
+    padding: 1rem 0 0 0;
     text-align: center;
-    font-size: 1cqi;
+    font-size: 1.25rem;
 
     ul li {
       margin: 0 auto;
