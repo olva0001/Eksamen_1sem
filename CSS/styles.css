@@ -1,7 +1,8 @@
 body {
-  background: linear-gradient(to bottom, #ffffff, #30b145);
+  background: linear-gradient(to bottom, #ffffff, #78f1ff);
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .poppins-light {
@@ -63,7 +64,7 @@ nav {
     }
 
     li a:hover {
-      color: #006308;
+      color: #0e64ce;
     }
 
     li:hover {
@@ -143,7 +144,7 @@ main {
 .rows_container {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 25rem;
+  margin-top: 30rem;
   margin-left: 10rem;
   margin-right: 10rem;
   margin-bottom: 15rem;
@@ -399,6 +400,20 @@ hr {
   height: auto;
 }
 
+.lottie_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+  width: 100vw;
+}
+
+lottie-player {
+  width: 5%;
+  height: auto;
+  transition: opacity 0.5s ease-out;
+}
+
 /* Scroll Animationer */
 
 .row {
@@ -484,7 +499,7 @@ hr {
 }
 
 .footer_li a:hover {
-  color: rgb(32, 212, 0);
+  color: #78f1ff;
   padding-left: 10px;
   border-left: 1px solid #ffffff;
   transition: all 0.3s ease;
@@ -507,7 +522,7 @@ hr {
 }
 
 .om_mig a:hover {
-  color: rgb(32, 212, 0);
+  color: #78f1ff;
   padding-left: 10px;
   border-left: 1px solid #ffffff;
   transition: all 0.3s ease;
