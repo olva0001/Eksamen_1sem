@@ -41,13 +41,10 @@
     padding: 10px 0;
   }
 
-  main {
-    overflow-x: hidden;
-  }
-
   .forside_h2 {
     margin: 2rem;
     font-size: 4cqi;
+    color: red;
   }
 
   .lottie_container {
