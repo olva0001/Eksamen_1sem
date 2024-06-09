@@ -1,20 +1,38 @@
 
-/* Forside tema præsentationer */
+/* forside rows præsentation */
 
 document.addEventListener('DOMContentLoaded', function() {
-  const rows = document.querySelectorAll('.row_1, .row_2, .row_3, .row_4, .row_5');
-  const observer = new IntersectionObserver((entries, observer) => {
+  const rows = document.querySelectorAll('.row');
+  
+  function handleIntersection(entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('in-view');
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }
 
-  rows.forEach(row => {
-    observer.observe(row);
-  });
+  function initObserver() {
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.1 });
+    rows.forEach(row => {
+      observer.observe(row);
+    });
+  }
+
+  function checkScreenSize() {
+    if (window.innerWidth > 768) {
+      rows.forEach(row => row.classList.remove('in-view'));
+      initObserver();
+    } else {
+      rows.forEach(row => {
+        row.classList.add('in-view');
+      });
+    }
+  }
+
+  checkScreenSize();
+  window.addEventListener('resize', checkScreenSize);
 });
 
 /* Lottiefile */

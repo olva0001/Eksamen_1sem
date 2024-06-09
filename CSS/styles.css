@@ -131,6 +131,8 @@ main {
   overflow-x: hidden;
 }
 
+/* forside-start */
+
 .forside_h2 {
   margin-top: 4rem;
   margin-left: 10rem;
@@ -275,6 +277,8 @@ main {
   text-align: center;
 }
 
+/* forside-slut */
+
 .grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -358,6 +362,10 @@ hr {
   border-radius: 100px;
   box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
   margin-top: 1rem;
+}
+
+.button_mobil {
+  visibility: hidden;
 }
 
 .button:hover {
