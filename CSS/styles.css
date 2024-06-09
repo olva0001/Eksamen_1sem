@@ -133,6 +133,10 @@ main {
 
 /* forside-start */
 
+.mobile_forside_h1 {
+  visibility: hidden;
+}
+
 .forside_h2 {
   margin-top: 4rem;
   margin-left: 10rem;
@@ -179,7 +183,7 @@ main {
 .row_1_3 {
   grid-column: 3;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: -3rem;
 }
 
 .row_2 {

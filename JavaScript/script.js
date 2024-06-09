@@ -45,7 +45,7 @@ document.addEventListener('scroll', function() {
   const windowHeight = window.innerHeight;
 
   if (scrollY < containerHeight) {
-    const opacity = 1 - (scrollY / (containerHeight / 2)); // Adjust the denominator for a smoother fade
+    const opacity = 1 - (scrollY / (containerHeight / 2));
     lottiePlayer.style.opacity = opacity;
   } else {
     lottiePlayer.style.opacity = 0;
