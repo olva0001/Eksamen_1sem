@@ -67,4 +67,32 @@
   .flags_svg {
     width: 100%;
   }
+
+  .black_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_li_title {
+    display: none;
+  }
+
+  .footer_ul li {
+    line-height: 2rem;
+  }
+
+  .om_mig {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 1px solid #78f1ff;
+    padding-left: 1rem;
+  }
+
+  .socials {
+    margin-bottom: 0;
+    padding-right: 0;
+    text-align: center;
+  }
 }
