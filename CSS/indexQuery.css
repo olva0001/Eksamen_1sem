@@ -75,7 +75,7 @@
 
   .button_mobil {
     border-radius: 200px;
-    visibility: visible;
+    display: inline;
     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
   }
 
@@ -282,11 +282,11 @@
     display: none;
   }
 
-  #tree1,
-  #tree2,
-  #tree3,
-  #tree4,
-  #tree5 {
+  #planet1,
+  #planet2,
+  #planet3,
+  #planet4,
+  #planet5 {
     display: none;
   }
 
